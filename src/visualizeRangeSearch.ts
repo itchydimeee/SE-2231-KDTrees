@@ -85,12 +85,12 @@ let sketch = function (p) {
     p.strokeWeight(4 / height / 5);
     rect.draw(p);
 
-    // draw the range search results for brute-force data structure in red
-    // p.stroke("red");
-    // p.strokeWeight(12 / height);
-    // for (let point of brute.range(rect)) {
-    //     point.draw(p);
-    // }
+    //draw the range search results for brute-force data structure in red
+    p.stroke("red");
+    p.strokeWeight(12 / height);
+    for (let point of brute.range(rect)) {
+        point.draw(p);
+    }
 
     // draw the range search results for kd-tree in green
     p.strokeWeight(8 / height);
